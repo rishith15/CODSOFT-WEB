@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #d4af37;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            background-color: #d4af37;
+            color: #000;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background-color: #b8962e;
+        }
+        .about-section, .resume-section, .skills-section, .projects-section, .contact-section {
+            padding: 50px 20px;
+        }
+        .about-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        .about-image {
+            flex: 1;
+            max-width: 400px;
+            margin-right: 20px;
+        }
+        .about-content {
+            flex: 2;
+            text-align: left;
+        }
+        .about-content h2 {
+            color: #d4af37;
+        }
+        .about-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .skills-section h2, .projects-section h2, .resume-section h2 {
+            color: #d4af37;
+            text-align: center;
+        }
+        .skills-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .skills-section p, .resume-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        .skill {
+            max-width: 300px;
+            margin: 10px;
+        }
+        .skill h3 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .skill p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #ccc;
+        }
+        .projects-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .projects-table th, .projects-table td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+        .projects-table th {
+            background-color: #333;
+        }
+        .projects-table td {
+            background-color: #222;
+        }
+        .resume-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .resume-text {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .resume-text h2 {
+            color: #d4af37;
+        }
+        .resume-text ul {
+            list-style: none;
+            padding: 0;
+        }
+        .resume-text li {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .resume-text ul li::before {
+            content: '• ';
+            color: #d4af37;
+            font-size: 1.5rem;
+        }
+        .resume-image {
+            flex: 1;
+        }
+        .resume-image img {
+            max-width: 20%;
+            border-radius: 10px;
+        }
+        .resume-download {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 8px 16px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+            text-align: center;
+        }
+        .resume-download:hover {
+            background-color: #2980b9;
+        }
+        .contact-section h2 {
+            color: #d4af37;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-box {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+            max-width: 600px;
+            text-align: center;
+        }
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+            color: #aaa;
+        }
+        .footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Portfolio</h1>
+        <p>Welcome to my online portfolio, showcasing my skills and passion and my projects.</p>
+        <div class="buttons">
+            <a href="#about" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Reach out</a>
+        </div>
+    </div>
+
+    <div id="about" class="about-section">
+        <img src="DSC02059.JPG" alt="Profile Picture" class="about-image">
+        <div class="about-content">
+            <h2>About</h2>
+            <div class="about-box">
+                <h3>Introduction</h3>
+                <p>I'm a driven and versatile professional with a diverse skill set and a passion for making a difference.</p>
+                <p>I excel at project management, content creation, and strategic problem-solving. With several years of experience in the industry, I've honed my abilities to deliver exceptional results.</p>
+            </div>
+            <div class="about-box">
+                <h3>Skills & Experience</h3>
+                <p>This section showcases your key skills and relevant experience in web design, outlining the technologies you are proficient in and any notable projects you have worked on.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h2>Short bio about my skills.</h2>
+        <div class="skills-box">
+            <p>A proficient web developer with expertise in HTML, CSS, and JavaScript, I specialize in building responsive and interactive websites. I am also skilled in Java, Python, C, and C++ for developing robust and efficient applications. Additionally, I have experience in DevOps, automating and streamlining the software development process using various tools and technologies.</p>
+            <img src="WhatsApp Image 2024-07-30 at 2.44.20 AM.jpeg" width="300">
+        </div>
+
+       
+    </div>
+
+    <div class="skills-section">
+        <h2>Skills Section</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, and JavaScript for building responsive and interactive websites.</p>
+            </div>
+            <div class="skill">
+                <h3>Programming</h3>
+                <p>Java, Python, C, and C++ for developing robust and efficient applications.</p>
+            </div>
+            <div class="skill">
+                <h3>DevOps</h3>
+                <p>Automating and streamlining the software development process.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-section">
+        <h2>Projects Section</h2>
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Project Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portfolio Website</td>
+                    <td>Designed and developed a personal portfolio website to showcase my skills and projects.</td>
+                </tr>
+                <tr>
+                    <td>Calculator Website</td>
+                    <td>Developed a user-friendly calculator with basic arithmetic operations (addition, subtraction, multiplication, division) ensuring smooth functionality and an appealing interface.</td>
+                </tr>
+                <tr>
+                    <td>Landing Page Website</td>
+                    <td>Created a visually compelling, responsive landing page with interactive elements to capture user interest and drive engagement.</td>
+                </tr>
+                <tr>
+                    <td>Moto Gather</td>
+                    <td>Created a web platform about cars which displayed each and every type and info of the cars.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="resume-section">
+        <h2>Resume Section</h2>
+        <div class="resume-content">
+            <div class="resume-text">
+                <p>To know more about my:</p>
+                <ul>
+                    <li>Work Experience</li>
+                    <li>Education</li>
+                    <li>Skills</li>
+                </ul>
+                <p>click below</p>
+                <a href="path/to/your/resume.pdf" download class="resume-download">Download Resume</a>
+            </div>
+            <div class="resume-image">
+                <img src="336e8e67b87ea7aa4bec85fd258322fc.png" alt="Resume Image">
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <h2>Reach out:</h2>
+        <div class="contact-box">
+            <div class="contact-info">
+                <p>Email: <a href="mailto:abc123@gmail.com">abc123@gmail.com</a></p>
+                <p>Phone: 9125467994</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Thank you</h2>
+            <p>Feel free to reach out to me if you have any opportunities or collaborations in mind. I am eager to discuss and contribute to exciting projects that align with my skillset and passion for web design. Thank you once again for your time and consideration.</p>
+            <p>© 2024 My Portfolio. All rights reserved</p>
+            <p><a href="#privacy-policy">Privacy policy</a> | <a href="#terms-of-service">Terms of service</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
